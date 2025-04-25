@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Your Meal Plan | NutriPlan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            <span>NutriPlan</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+        </ul>
+    </nav>
+
+    <main class="generator-container">
+        <div class="generator-header">
+            <h1>Your Personalized Meal Planner</h1>
+            <p class="subtitle">Enter the ingredients you have available, and we'll create a balanced meal plan for you</p>
+        </div>
+
+        <div class="input-section">
+            <div class="input-card">
+                <label for="items">What ingredients do you have?</label>
+                <textarea name="items" id="items" placeholder="Enter ingredients separated by commas or spaces (e.g., chicken, rice, spinach, eggs, tomatoes)" class="ingredient-input"></textarea>
+                <div class="examples">
+                    <p>Examples:</p>
+                    <ul>
+                        <li>chicken breast brown rice broccoli carrots</li>
+                        <li>salmon, quinoa, avocado, spinach</li>
+                        <li>tofu sweet_potato kale chickpeas</li>
+                    </ul>
+                </div>
+                <button type="button" class="generate-button" id="btn">
+                    <i class="fas fa-magic"></i> Generate My Meal Plan
+                </button>
+            </div>
+        </div>
+
+        <div id="dietResult" class="result-container hidden">
+            <h2>Your Balanced Meal Plan</h2>
+            <div class="result-card">
+                <div class="macronutrient protein">
+                    <h3><i class="fas fa-drumstick-bite"></i> Protein</h3>
+                    <p id="protein-result">Not specified</p>
+                </div>
+                <div class="macronutrient carb">
+                    <h3><i class="fas fa-bread-slice"></i> Carbohydrate</h3>
+                    <p id="carb-result">Not specified</p>
+                </div>
+                <div class="macronutrient veggie">
+                    <h3><i class="fas fa-carrot"></i> Vegetables</h3>
+                    <p id="veggie-result">Not specified</p>
+                </div>
+            </div>
+            <div class="meal-suggestion">
+                <h3>Suggested Meal Combination:</h3>
+                <p id="meal-suggestion">Enter your ingredients and generate a plan to see suggestions</p>
+            </div>
+            <button class="try-again-button" id="tryAgainBtn">
+                <i class="fas fa-redo"></i> Try Different Ingredients
+            </button>
+        </div>
+
+        <div class="tips-section">
+            <h3>Tips for a Balanced Diet</h3>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <p>Aim for a mix of protein, carbs, and vegetables in each meal</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-seedling"></i>
+                    <p>Include a variety of colorful vegetables for maximum nutrients</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-tint"></i>
+                    <p>Don't forget to stay hydrated throughout the day</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-utensils"></i>
+                <span>NutriPlan</span>
+            </div>
+            <p>Making healthy eating simple and accessible for everyone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 NutriPlan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
